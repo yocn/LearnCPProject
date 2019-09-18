@@ -2,6 +2,8 @@
 #include <vector>
 #include "testParam.h"
 #include "TestThread.h"
+#include "TestMutex.h"
+#include "testStruct.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -18,7 +20,9 @@ int main() {
 //    push3(vector3);
 //    std::cout << "vector3-" << vector3.size() << std::endl;
 
-    testThread();
+//    testThread();
+//    testMutex();
+    test();
     return 0;
 }
 
