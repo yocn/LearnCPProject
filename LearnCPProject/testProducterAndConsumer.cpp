@@ -59,4 +59,8 @@ void testPC() {
     int rc2 = pthread_create(&pthreads[1], nullptr, consume, pp);
     pthread_join(pthreads[0], nullptr);
     pthread_join(pthreads[1], nullptr);
+    pthread_mutex_destroy(&mutexPC);
+    delete pp;
+    printf("运行结束");
+    delete pp;
 }
