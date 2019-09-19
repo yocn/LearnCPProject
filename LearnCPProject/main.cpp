@@ -4,6 +4,7 @@
 #include "TestThread.h"
 #include "TestMutex.h"
 #include "testStruct.h"
+#include "testProducterAndConsumer.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -22,7 +23,8 @@ int main() {
 
 //    testThread();
 //    testMutex();
-    test();
+//    test();
+    testPC();
     return 0;
 }
 
