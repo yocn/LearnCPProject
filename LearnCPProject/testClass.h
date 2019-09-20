@@ -28,11 +28,24 @@ namespace TestClass {
         int m_age;
         float m_score;
     public:
+        static char *m_school_name;
+
+        static char *getSchoolName();
+
+        static void echoSchoolName();
+
         //声明构造函数
+        Student();
+
+        ~Student();
+
         Student(char *name, int age, float score);
 
         //声明普通成员函数
         void show();
+
+        //声明常成员函数
+        void getname() const;
     };
 
 }
