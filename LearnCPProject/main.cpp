@@ -6,6 +6,7 @@
 #include "testStruct.h"
 #include "testProducterAndConsumer.h"
 #include "testClass.h"
+#include "testInheritance.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -25,6 +26,7 @@ int main() {
 //    testThread();
 //    testMutex();
 //    testPC();
-    TestClass::test();
+//    TestClass::test();
+    Inheritance::test();
     return 0;
 }

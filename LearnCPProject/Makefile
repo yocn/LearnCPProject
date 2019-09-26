@@ -231,6 +231,33 @@ testClass.cpp.s:
 	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testClass.cpp.s
 .PHONY : testClass.cpp.s
 
+testInheritance.o: testInheritance.cpp.o
+
+.PHONY : testInheritance.o
+
+# target to build an object file
+testInheritance.cpp.o:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testInheritance.cpp.o
+.PHONY : testInheritance.cpp.o
+
+testInheritance.i: testInheritance.cpp.i
+
+.PHONY : testInheritance.i
+
+# target to preprocess a source file
+testInheritance.cpp.i:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testInheritance.cpp.i
+.PHONY : testInheritance.cpp.i
+
+testInheritance.s: testInheritance.cpp.s
+
+.PHONY : testInheritance.s
+
+# target to generate assembly for a file
+testInheritance.cpp.s:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testInheritance.cpp.s
+.PHONY : testInheritance.cpp.s
+
 testParam.o: testParam.cpp.o
 
 .PHONY : testParam.o
@@ -333,6 +360,9 @@ help:
 	@echo "... testClass.o"
 	@echo "... testClass.i"
 	@echo "... testClass.s"
+	@echo "... testInheritance.o"
+	@echo "... testInheritance.i"
+	@echo "... testInheritance.s"
 	@echo "... testParam.o"
 	@echo "... testParam.i"
 	@echo "... testParam.s"
