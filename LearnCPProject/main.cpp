@@ -7,6 +7,7 @@
 #include "testProducterAndConsumer.h"
 #include "testClass.h"
 #include "testInheritance.h"
+#include "testOperator.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -27,6 +28,7 @@ int main() {
 //    testMutex();
 //    testPC();
 //    TestClass::test();
-    Inheritance::test();
+//    Inheritance::test();
+    operatorNS::test();
     return 0;
 }
