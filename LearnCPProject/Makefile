@@ -366,6 +366,33 @@ testStruct.cpp.s:
 	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testStruct.cpp.s
 .PHONY : testStruct.cpp.s
 
+testTemplate.o: testTemplate.cpp.o
+
+.PHONY : testTemplate.o
+
+# target to build an object file
+testTemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testTemplate.cpp.o
+.PHONY : testTemplate.cpp.o
+
+testTemplate.i: testTemplate.cpp.i
+
+.PHONY : testTemplate.i
+
+# target to preprocess a source file
+testTemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testTemplate.cpp.i
+.PHONY : testTemplate.cpp.i
+
+testTemplate.s: testTemplate.cpp.s
+
+.PHONY : testTemplate.s
+
+# target to generate assembly for a file
+testTemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/LearnCPProject.dir/build.make CMakeFiles/LearnCPProject.dir/testTemplate.cpp.s
+.PHONY : testTemplate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,6 +429,9 @@ help:
 	@echo "... testStruct.o"
 	@echo "... testStruct.i"
 	@echo "... testStruct.s"
+	@echo "... testTemplate.o"
+	@echo "... testTemplate.i"
+	@echo "... testTemplate.s"
 .PHONY : help
 
 

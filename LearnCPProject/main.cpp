@@ -8,6 +8,7 @@
 #include "testClass.h"
 #include "testInheritance.h"
 #include "testOperator.h"
+#include "testTemplate.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -29,6 +30,7 @@ int main() {
 //    testPC();
 //    TestClass::test();
 //    Inheritance::test();
-    operatorNS::test();
+//    operatorNS::test();
+    templateNS::test();
     return 0;
 }
