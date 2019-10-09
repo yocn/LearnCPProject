@@ -10,6 +10,7 @@
 #include "learn/testOperator.h"
 #include "learn/testTemplate.h"
 #include "learn/TestOO.h"
+#include "algorithm/package01.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -33,6 +34,7 @@ int main() {
 //    Inheritance::test();
 //    operatorNS::test();
 //    templateNS::test();
-    OONS::test();
+//    OONS::test();
+    package01::test();
     return 0;
 }
