@@ -10,6 +10,7 @@
 #include "learn/testOperator.h"
 #include "learn/testTemplate.h"
 #include "learn/TestOO.h"
+#include "learn/testArray.h"
 #include "algorithm/package01.h"
 
 int main() {
@@ -35,6 +36,7 @@ int main() {
 //    operatorNS::test();
 //    templateNS::test();
 //    OONS::test();
-    package01::test();
+//    package01::test();
+    arraySP::test();
     return 0;
 }
