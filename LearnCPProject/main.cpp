@@ -11,7 +11,8 @@
 #include "learn/testTemplate.h"
 #include "learn/TestOO.h"
 #include "learn/testArray.h"
-#include "algorithm/package01.h"
+#include "algorithm/dynamicProgramming/package01.h"
+#include "algorithm/dynamicProgramming/PascalTriangle.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -36,7 +37,8 @@ int main() {
 //    operatorNS::test();
 //    templateNS::test();
 //    OONS::test();
+//    arraySP::test();
 //    package01::test();
-    arraySP::test();
+    pascal::test();
     return 0;
 }

@@ -7,7 +7,7 @@
 #include "testArray.h"
 
 namespace arraySP {
-
+    //https://blog.csdn.net/chen1083376511/article/details/78386419
     void showInts(int *ints, int size) {
         std::string ss("打印一维数组-->\n");
         for (int i = 0; i < size; ++i) {
