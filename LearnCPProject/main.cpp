@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
-#include "testParam.h"
-#include "TestThread.h"
-#include "TestMutex.h"
-#include "testStruct.h"
-#include "testProducterAndConsumer.h"
-#include "testClass.h"
-#include "testInheritance.h"
-#include "testOperator.h"
-#include "testTemplate.h"
-#include "TestOO.h"
+#include "learn/testParam.h"
+#include "learn/TestThread.h"
+#include "learn/TestMutex.h"
+#include "learn/testStruct.h"
+#include "learn/testProducterAndConsumer.h"
+#include "learn/testClass.h"
+#include "learn/testInheritance.h"
+#include "learn/testOperator.h"
+#include "learn/testTemplate.h"
+#include "learn/TestOO.h"
 
 int main() {
 //    std::vector<int> vector1;
