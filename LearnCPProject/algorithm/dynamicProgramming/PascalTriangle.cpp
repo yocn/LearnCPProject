@@ -9,10 +9,7 @@ namespace pascal {
 
     PasBean::~PasBean() = default;
 
-
     PasBean initPascalBean() {
-
-
         PasBean root(5);
         PasBean lv1_0(7);
         PasBean lv1_1(8);
@@ -67,13 +64,32 @@ namespace pascal {
         left[0][0] = root.m_value;
         right[0][0] = root.m_value;
 
-        
-
         ArrayUtil::PrintInts(5, 5, left);
     }
 
+
+//    PasBean root(0);
+
+    void init() {
+
+        PasBean lv1_0(1);
+        PasBean lv1_1(2);
+
+        PasBean lv2_0(3);
+        lv1_0.left = &lv2_0;
+
+//        root.left = &lv1_0;
+//        root.right = &lv1_1;
+
+    }
+
     void test() {
-        dynamic();
+//        init();
+        PasBean root = initPascalBean();
+
+        printf("self:%d, left:%d right:%d\n", root.m_value, root.left->m_value, root.right->m_value);
+//        fflush(stdout);
+        printf("self:%d, left:%d", root.left->m_value, root.left->left->m_value);
     }
 
 }

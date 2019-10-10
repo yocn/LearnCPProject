@@ -10,8 +10,8 @@ namespace pascal {
     typedef class PasBean {
     public:
         int m_value;
-        PasBean *left{};
-        PasBean *right{};
+        PasBean *left;
+        PasBean *right;
 
         PasBean(int _value) : m_value(_value) {}
 

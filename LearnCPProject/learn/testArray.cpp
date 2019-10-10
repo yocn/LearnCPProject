@@ -29,6 +29,18 @@ namespace arraySP {
         printf("%s", ss.c_str());
     }
 
+    void showInts(int *ints, int width, int height) {
+        std::string ss("打印二维数组-->\n");
+        for (int i = 0; i < width; ++i) {
+            for (int j = 0; j < height; ++j) {
+                ss.append(std::to_string(ints[i * width + j])).append(" ");
+            }
+            ss.append("\n");
+        }
+        ss.append("\n");
+        printf("%s", ss.c_str());
+    }
+
     void test() {
         int x = 12, y = 22;
         int i1[2];
