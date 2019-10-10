@@ -47,6 +47,13 @@ namespace ArrayUtil {
      * rect 在这里隐式转换为指向数组首元素的指针
      * 而rect数组第一个元素是一个 int[4]类型的表达式
      * 所以转换得到的指针是一个数组指针 int(*)[4]
+     *
+     * int rect[4][4] = {0}
+     *
+     * showInts(*rect, 4, 4);
+     * showInts((int *) rect, 4, 4);
+     * showInts(&rect[0][0], 4, 4);
+     *
      * @param tar 目标需要打印的数组
      * @param width  宽
      * @param height 高
@@ -57,10 +64,10 @@ namespace ArrayUtil {
             s.append("  ").append(to_string(k));
         }
         s.append("\n\n");
-        for (int i = 0; i < width; ++i) {
+        for (int i = 0; i < height; ++i) {
             s.append(to_string(i)).append("    ");
-            for (int j = 0; j < height; ++j) {
-                int current = tar[i * width + j];
+            for (int j = 0; j < width; ++j) {
+                int current = tar[i * height + j];
                 if (current < 10) {
                     s.append(" ").append(to_string(current)).append(" ");
                 } else {
@@ -69,7 +76,7 @@ namespace ArrayUtil {
             }
             s.append("\n");
         }
-        printf("%s", s.c_str());
+        printf("%s\n", s.c_str());
     }
 
     inline void PrintInts(int *ints, int size) {

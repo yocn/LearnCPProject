@@ -40,7 +40,7 @@ int main() {
 //    OONS::test();
 //    arraySP::test();
 //    package01::test();
-    pascal::test();
-//    RectMinNS::test();
+//    pascal::test();
+    RectMinNS::test();
     return 0;
 }
