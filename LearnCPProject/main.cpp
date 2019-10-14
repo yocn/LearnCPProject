@@ -13,7 +13,8 @@
 #include "learn/testArray.h"
 #include "algorithm/dynamicProgramming/package01.h"
 #include "algorithm/dynamicProgramming/PascalTriangle.h"
-#include "algorithm/dynamicProgramming/RectMin.h"
+//#include "algorithm/dynamicProgramming/RectMin.h"
+#include "algorithm/dynamicProgramming/distance.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -41,6 +42,7 @@ int main() {
 //    arraySP::test();
 //    package01::test();
 //    pascal::test();
-    RectMinNS::test();
+//    RectMinNS::test();
+    distanceNS::test();
     return 0;
 }

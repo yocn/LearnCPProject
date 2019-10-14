@@ -30,16 +30,16 @@ namespace RectMinNS {
         }
 
         if (x < width - 1) {
-            int v = value + rect[x][y];
 //            printf("1     value:%d v: %d \n", value, v);
 //            value += rect[x][y];
-//            printf("2  value:%d v: %d \n", value, v);
+//            calc(x + 1, y, value, history + "(" + to_string(value) + ")" + to_string(rect[x][y]) + " ");
+            int v = value + rect[x][y];
             calc(x + 1, y, v, history + "(" + to_string(value) + ")" + to_string(rect[x][y]) + " ");
         }
         if (y < height - 1) {
-            int v = value + rect[x][y];
 //            value += rect[x][y];
-//            printf("2  value:%d v: %d \n", value, v);
+//            calc(x, y + 1, value, history + "(" + to_string(value) + ")" + to_string(rect[x][y]) + " ");
+            int v = value + rect[x][y];
             calc(x, y + 1, v, history + "(" + to_string(value) + ")" + to_string(rect[x][y]) + " ");
         }
     }
