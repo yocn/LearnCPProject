@@ -3,6 +3,7 @@
 //
 
 #include "distance.h"
+#include "../../utils/arrayUtil.h"
 #include <string>
 
 /**
@@ -85,24 +86,27 @@ namespace distanceNS {
 
 
     /**
+     * 动态代理的方式解决s
+     *
      * 对第一行初始化，相当于求解a[0]和b在所有位置的最小编辑距离，那么对于b第一个位置，如果和a[0]相同则为0，不同则为1。对于第j个位置的元素，
      * 如果和a[0]相同，直接等于j就行，为什么呢？因为直接把前面j-1个位置的元素删除就行，对应的编辑距离就是j（因为下标是从0开始的）；
      * 如果和a[0]不同，那么就等于前一个位置的编辑距离+1。同理，第一列是类似的
      */
-    void dynamicPro(char *a, char *b, int x, int y) {
+    void dynamicPro(const char *a, const char *b, int x, int y) {
         int minDist[x][y];
+        memset(minDist, 0, sizeof(int) * x * y);
         for (int i = 0; i < x; ++i) {
             if (i == 0) {
                 if (b[0] == a[i]) {
-                    minDist[0][i] = 0;
+                    minDist[i][0] = 0;
                 } else {
-                    minDist[0][i] = 1;
+                    minDist[i][0] = 1;
                 }
             } else {
                 if (b[0] == a[i]) {
-                    minDist[0][i] = i;
+                    minDist[i][0] = i;
                 } else {
-                    minDist[0][i] = minDist[0][i - 1] + 1;
+                    minDist[i][0] = minDist[i - 1][0] + 1;
                 }
             }
         }
@@ -117,30 +121,31 @@ namespace distanceNS {
             }
         }
 
-        for (int j = 0; j < y; j++) {
-            if (j == 0) {
-                if (a[0] == b[j]) {//a[0] == b[0]
-                    minDist[0][j] = 0;
+        ArrayUtil::PrintInts(minDist[0], x, y);
+
+        for (int i = 1; i < x; ++i) {
+            for (int j = 1; j < y; ++j) {
+                if (a[i] == b[j]) {
+                    minDist[i][j] = minInt(minDist[i - 1][j] + 1, minDist[i][j - 1] + 1, minDist[i - 1][j - 1]);
                 } else {
-                    minDist[0][j] = 1;
-                }
-            } else {
-                if (a[0] == b[j]) {
-                    minDist[0][j] = j;
-                } else {
-                    minDist[0][j] = minDist[0][j - 1] + 1;
+                    minDist[i][j] = minInt(minDist[i - 1][j] + 1, minDist[i][j - 1] + 1, minDist[i - 1][j - 1] + 1);
                 }
             }
         }
+
+        ArrayUtil::PrintInts(minDist[0], x, y);
+
     }
 
     void test() {
-        printf("%s\n", c1);
-        printf("%s\n", c2);
-        string s = "abc";
-        string c = s.substr(0, s.size() - 1);
-        printf("%s\n", c.data());
-        calc(0, 0, 0, "");
+//        printf("%s\n", c1);
+//        printf("%s\n", c2);
+//        string s = "abc";
+//        string c = s.substr(0, s.size() - 1);
+//        printf("%s\n", c.data());
+//        calc(0, 0, 0, "");
+
+        dynamicPro(c1, c2, 6, 6);
     }
 }
 

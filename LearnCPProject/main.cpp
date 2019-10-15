@@ -44,7 +44,7 @@ int main() {
 //    package01::test();
 //    pascal::test();
 //    RectMinNS::test();
-//    distanceNS::test();
-    TestIONS::test();
+    distanceNS::test();
+//    TestIONS::test();
     return 0;
 }

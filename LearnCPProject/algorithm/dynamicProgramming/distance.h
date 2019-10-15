@@ -6,6 +6,12 @@
 #define LEARNCPPROJECT_DISTANCE_H
 
 namespace distanceNS {
+
+    inline int minInt(int x, int y, int z) {
+        int m = x > y ? y : x;
+        return m > z ? z : m;
+    }
+
     void test();
 }
 
