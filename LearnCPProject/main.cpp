@@ -11,6 +11,7 @@
 #include "learn/testTemplate.h"
 #include "learn/TestOO.h"
 #include "learn/testArray.h"
+#include "learn/TestIO.h"
 #include "algorithm/dynamicProgramming/package01.h"
 #include "algorithm/dynamicProgramming/PascalTriangle.h"
 //#include "algorithm/dynamicProgramming/RectMin.h"
@@ -43,6 +44,7 @@ int main() {
 //    package01::test();
 //    pascal::test();
 //    RectMinNS::test();
-    distanceNS::test();
+//    distanceNS::test();
+    TestIONS::test();
     return 0;
 }
