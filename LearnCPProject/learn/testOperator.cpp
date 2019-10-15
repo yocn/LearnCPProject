@@ -29,12 +29,20 @@ namespace operatorNS {
         printf("boy:%d , girl:%d\n", boy, girl);
     }
 
+    student *student::operator+(int boy) {
+        this->boy += boy;
+        return this;
+    }
+
     void test() {
         stu_p stu1 = new student(10, 11);
         stu_p stu2 = new student(20, 21);
         student st = *stu1 + *stu2;
+//        st.show();
+//        stu1->show();
+//        stu2->show();
         st.show();
-        stu1->show();
-        stu2->show();
+        stu_p sttt = st + 11;
+        sttt->show();
     }
 }

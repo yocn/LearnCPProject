@@ -16,6 +16,7 @@
 #include "algorithm/dynamicProgramming/PascalTriangle.h"
 //#include "algorithm/dynamicProgramming/RectMin.h"
 #include "algorithm/dynamicProgramming/distance.h"
+#include "learn/TestSTL.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -44,7 +45,8 @@ int main() {
 //    package01::test();
 //    pascal::test();
 //    RectMinNS::test();
-    distanceNS::test();
+//    distanceNS::test();
 //    TestIONS::test();
+    STL_NS::test();
     return 0;
 }

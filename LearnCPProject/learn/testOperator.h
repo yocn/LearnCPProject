@@ -12,6 +12,7 @@ namespace operatorNS {
         int girl;
     public:
         student operator+(student &stu);
+        student* operator+(int age);
 
         void setBoy(int boy);
 
