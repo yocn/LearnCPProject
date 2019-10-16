@@ -17,6 +17,8 @@
 //#include "algorithm/dynamicProgramming/RectMin.h"
 #include "algorithm/dynamicProgramming/distance.h"
 #include "learn/TestSTL.h"
+#include "learn/TestDefine.h"
+#include "learn/MDefine.h"
 
 int main() {
 //    std::vector<int> vector1;
@@ -38,7 +40,7 @@ int main() {
 //    testPC();
 //    TestClass::test();
 //    Inheritance::test();
-//    operatorNS::test();
+    operatorNS::test();
 //    templateNS::test();
 //    OONS::test();
 //    arraySP::test();
@@ -47,6 +49,6 @@ int main() {
 //    RectMinNS::test();
 //    distanceNS::test();
 //    TestIONS::test();
-    STL_NS::test();
+//    STL_NS::test();
     return 0;
 }

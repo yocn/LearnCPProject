@@ -15,7 +15,7 @@ using namespace std;
 
 
 namespace TestIONS {
-#define CHECK_EQ(val1, val2) if(val1==val2){cout<<"true"<<endl;}else{cout<<#val1<<" != "<<#val2<<endl;}
+//#define CHECK_EQ(val1, val2) if(val1==val2){cout<<"true"<<endl;}else{cout<<#val1<<" != "<<#val2<<endl;}
 
     typedef class Student {
     public:

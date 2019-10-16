@@ -177,7 +177,7 @@ namespace TestIONS {
         Student stu;
         stu.m_age = 101;
 
-        CHECK_EQ(a + b, stu.m_age);
+//        CHECK_EQ(a + b, stu.m_age);
 //        cout << varName(stu) << endl;
 //        printExp(a);
 //        printExp(b);
