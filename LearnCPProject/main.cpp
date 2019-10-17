@@ -40,7 +40,7 @@ int main() {
 //    testPC();
 //    TestClass::test();
 //    Inheritance::test();
-    operatorNS::test();
+//    operatorNS::test();
 //    templateNS::test();
 //    OONS::test();
 //    arraySP::test();
@@ -49,6 +49,6 @@ int main() {
 //    RectMinNS::test();
 //    distanceNS::test();
 //    TestIONS::test();
-//    STL_NS::test();
+    STL_NS::test();
     return 0;
 }

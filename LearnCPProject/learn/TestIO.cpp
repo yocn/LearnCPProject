@@ -19,6 +19,7 @@ namespace TestIONS {
 
     void testReverses() {
         string str = "abcdefg";
+        freopen("test.txt", "w", stdout);
         for (int i = str.length() - 1; i >= 0; --i) {
             cout.put(str[i]);
         }
@@ -171,11 +172,13 @@ namespace TestIONS {
 //        writeStudent2File();
 //        readStudentFromDat();
 //        tests();
-        int a = 1;
-        int b = 9;
-        string sss = "sss";
-        Student stu;
-        stu.m_age = 101;
+//        int a = 1;
+//        int b = 9;
+//        string sss = "sss";
+//        Student stu;
+//        stu.m_age = 101;
+
+        testReverses();
 
 //        CHECK_EQ(a + b, stu.m_age);
 //        cout << varName(stu) << endl;
